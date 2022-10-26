@@ -1,12 +1,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .content {
     padding: 1rem;
 }
 
+/* Lista da classe dos pokemons */
 ol.pokemons {
     list-style: none;
     padding: 0;
@@ -15,11 +17,21 @@ ol.pokemons {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Padronizando os cards dos pokemons */
 ol.pokemons li {
+    display: flex;
+    flex-direction: column;
     margin: .5rem;
     padding: 2rem 1rem;
     border-radius: 1rem;
     background-color: #14a06f;
     color: #fff;
+    
+}
+
+/* Padronizando tamanho para as imagens */
+ol.pokemons li img {
+    max-width: 100%;
     height: 100px;
+    align-self: flex-end;
 }
