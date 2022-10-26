@@ -4,18 +4,55 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(241, 241, 241);
+}
+
 .content {
+    width: 100vw;
+    height: 100vh;
     padding: 1rem;
+    background-color: #FFF;
+}
+
+@media screen and (min-width: 982px) {
+    .content {
+        max-width: 982px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
 }
 
 /* Lista da classe dos pokemons */
 .pokemons {
     list-style: none;
+    grid-template-columns: 1fr;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
 }
+@media screen and (min-width: 380px) {
+ 
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+
+    }
+} 
+
+@media screen and (min-width: 982px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}   
 
 /* Padronizando os cards dos pokemons */
 .pokemon{
