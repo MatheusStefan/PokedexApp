@@ -22,35 +22,5 @@ body {
         margin: 1rem auto;
         border-radius: 1rem;
     }
-}
-
-/* Lista da classe dos pokemons */
-.pokemons {
-    list-style: none;
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin: 0;
-    display: grid;
-}
-@media screen and (min-width: 380px) {
- 
-    .pokemons {
-        grid-template-columns: 1fr 1fr;
-
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr;
-
-    }
-} 
-
-@media screen and (min-width: 982px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-}   
+}  
 
